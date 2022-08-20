@@ -15,14 +15,13 @@ export default function MainComponent(props: any) {
     <div
       style={{
         width: "100wv",
-        height: "100vh",
         backgroundColor: "black",
         padding: "40px",
       }}
     >
       <div>
         <Row>
-          <Column size={12} md={6} className="px-4">
+          <Column size={12} md={6} className="px-2">
             <Card className="mb-3">
               <Input
                 currentValue={inputOne}
@@ -52,7 +51,7 @@ export default function MainComponent(props: any) {
                 }}
               />
             </Card>
-            <Card>
+            <Card className="mb-3">
               <Input
                 currentValue={inputOne}
                 handleChange={(value: string) => {
@@ -86,7 +85,7 @@ export default function MainComponent(props: any) {
               />
             </Card>
           </Column>
-          <Column size={12} md={6} className="px-4">
+          <Column size={12} md={6} className="px-2">
             <Card>
               <Row>
                 <Column size={12} className="px-4">
