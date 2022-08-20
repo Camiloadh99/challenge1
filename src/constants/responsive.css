@@ -256,52 +256,52 @@
 /* margins */
 .my-1 {
   margin-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
 }
 .my-2 {
   margin-top: 0.5 !important;
-  padding-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 .my-3 {
   margin-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 .my-4 {
   margin-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
 }
 .my-5 {
   margin-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  margin-bottom: 3rem !important;
 }
 .my-auto {
   margin-top: auto !important;
-  padding-bottom: auto !important;
+  margin-bottom: auto !important;
 }
 
 .mx-1 {
   margin-right: 0.25rem !important;
-  padding-left: 0.25rem !important;
+  margin-left: 0.25rem !important;
 }
 .mx-2 {
   margin-right: 0.5 !important;
-  padding-left: 0.5rem !important;
+  margin-left: 0.5rem !important;
 }
 .mx-3 {
   margin-right: 1rem !important;
-  padding-left: 1rem !important;
+  margin-left: 1rem !important;
 }
 .mx-4 {
   margin-right: 1.5rem !important;
-  padding-left: 1.5rem !important;
+  margin-left: 1.5rem !important;
 }
 .mx-5 {
   margin-right: 3rem !important;
-  padding-left: 3rem !important;
+  margin-left: 3rem !important;
 }
 .mx-auto {
   margin-right: auto !important;
-  padding-left: auto !important;
+  margin-left: auto !important;
 }
 
 .mt-1 {
@@ -479,21 +479,32 @@ td {
 }
 
 .card {
+  --style-card-spacer-y: 1rem;
+  --style-card-spacer-x: 1rem;
+  --style-card-title-spacer-y: 0.5rem;
+  --style-card-border-width: 1px;
+  --style-card-border-color: var(--bs-border-color-translucent);
+  --style-card-border-radius: 0.375rem;
+  --style-card-inner-border-radius: calc(0.375rem - 1px);
+  --style-card-cap-padding-y: 0.5rem;
+  --style-card-cap-padding-x: 1rem;
+  --style-card-cap-bg: rgba(0, 0, 0, 0.03);
+  --style-card-bg: #fff;
+  --style-card-img-overlay-padding: 1rem;
+  --style-card-group-margin: 0.75rem;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  padding: 16px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
+  height: var(--style-card-height);
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: var(--style-card-bg);
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: var(--style-card-border-width) solid var(--style-card-border-color);
+  border-radius: var(--style-card-border-radius);
+  flex: 1 1 auto;
+  padding: var(--style-card-spacer-y) var(--style-card-spacer-x);
+  color: var(--style-card-color);
 }
 
 button:not(:disabled),

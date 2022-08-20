@@ -6,20 +6,25 @@ export default function Button(props: IButton) {
     onClick,
     disabled,
     type = "button",
-    variant = "contained",
-    color = "",
+    variant = "primary",
+    outlined,
     size = "large",
     className = "",
     style = {},
     label = "Button",
   } = props;
   //   variant text contained outlined
+
+  let typeButton = `${variant}`;
+  if (outlined) {
+    typeButton = `btn-outline-${variant}`;
+  }
   return (
     <button
       disabled={disabled}
       type={type}
       onClick={onClick}
-      className={`button-stl button-${variant} ${color} ${size} ${className}`}
+      className={`button-stl ${typeButton} ${size} ${className}`}
       style={style}
     >
       {label}

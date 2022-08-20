@@ -23,7 +23,7 @@ export default function MainComponent(props: any) {
       <div>
         <Row>
           <Column size={12} md={6} className="px-4">
-            <Card>
+            <Card className="mb-3">
               <Input
                 currentValue={inputOne}
                 handleChange={(value: string) => {
@@ -87,22 +87,118 @@ export default function MainComponent(props: any) {
             </Card>
           </Column>
           <Column size={12} md={6} className="px-4">
-            <div>
-              <Button onClick={() => {}} label="Button" />
-              <Button onClick={() => {}} label="Button" variant="text" />
-              <Button onClick={() => {}} label="Button" variant="outlined" />
-            </div>
-            <div>
-              <Button onClick={() => {}} label="Button" />
-              <Button onClick={() => {}} label="Button" size="small" />
-              <Button onClick={() => {}} label="Button" size="medium" />
-            </div>
-            <div>
-              <Button onClick={() => {}} label="Button" />
-              <Button onClick={() => {}} label="Button" color="secondary" />
-              <Button onClick={() => {}} label="Button" color="success" />
-              <Button onClick={() => {}} label="Button" color="error" />
-            </div>
+            <Card>
+              <Row>
+                <Column size={12} className="px-4">
+                  <Button onClick={() => {}} label="Button" variant="primary" />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="secondary"
+                  />
+                  <Button onClick={() => {}} label="Button" variant="success" />
+                  <Button onClick={() => {}} label="Button" variant="warning" />
+                  <Button onClick={() => {}} label="Button" variant="danger" />
+                  <Button onClick={() => {}} label="Button" variant="info" />
+                </Column>
+                <Column size={12} className="px-4 py-4">
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="primary"
+                    outlined
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="secondary"
+                    outlined
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="success"
+                    outlined
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="warning"
+                    outlined
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="danger"
+                    outlined
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="info"
+                    outlined
+                  />
+                </Column>
+                <Column size={12} className="px-4">
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="primary"
+                    disabled
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="secondary"
+                    disabled
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="success"
+                    disabled
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="warning"
+                    disabled
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="danger"
+                    disabled
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="info"
+                    disabled
+                  />
+                </Column>
+                <Column size={12} className="px-4 py-3">
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="primary"
+                    size="small"
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="primary"
+                    size="medium"
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="primary"
+                    size="large"
+                  />
+                </Column>
+              </Row>
+            </Card>
           </Column>
         </Row>
       </div>

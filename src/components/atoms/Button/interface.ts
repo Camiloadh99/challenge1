@@ -3,7 +3,7 @@ export interface IButton {
   disabled?: boolean;
   type?: any;
   variant?: string;
-  color?: string;
+  outlined?: boolean;
   size?: string;
   className?: string;
   style?: any;
