@@ -12,6 +12,8 @@ export default function Button(props: IButton) {
     className = "",
     style = {},
     label = "Button",
+    name,
+    id,
   } = props;
   //   variant text contained outlined
 
@@ -26,6 +28,8 @@ export default function Button(props: IButton) {
       onClick={onClick}
       className={`button-stl ${typeButton} ${size} ${className}`}
       style={style}
+      name={name}
+      id={id}
     >
       {label}
     </button>

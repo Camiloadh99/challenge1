@@ -8,4 +8,6 @@ export interface IButton {
   className?: string;
   style?: any;
   label: string;
+  name?: string;
+  id?: string;
 }
