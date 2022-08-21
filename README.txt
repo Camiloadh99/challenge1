@@ -7,3 +7,8 @@ Al descargar plantilla:
     - npm start 
 
 MainComponent.tsx contiene ejemplo de lo que hay en la plantilla
+
+
+TODO: useContext de la app
+      como manejar interfaces de api¿?
+      agregar elementos a carpetas vacias para que aparezcan en github

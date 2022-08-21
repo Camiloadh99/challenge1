@@ -1,14 +1,6 @@
 import React, { useState } from "react";
-import {
-  Input,
-  Button,
-  Card,
-  Column,
-  Row,
-  Image,
-  Table,
-} from "../../../components";
-import { classNames } from "../../../interfaces";
+import { Input, Button, Card, Column, Row, Image, Table } from "components";
+import { classNames } from "interfaces";
 export default function MainComponent(props: any) {
   const [inputOne, setInputOne] = useState<string>();
   return (

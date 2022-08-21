@@ -1,4 +1,5 @@
-export interface IButton {
+import { IGlobalProps } from "components/interface";
+export interface IButton extends IGlobalProps {
   onClick: any;
   disabled?: boolean;
   type?: any;
@@ -8,6 +9,4 @@ export interface IButton {
   className?: string;
   style?: any;
   label: string;
-  name?: string;
-  id?: string;
 }

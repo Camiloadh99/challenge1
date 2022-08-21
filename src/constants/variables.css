@@ -1,2 +1,9 @@
 :root {
+  --style-input-heigth: 30px;
+  --style-h1-font-size: 24px;
+  --style-h2-font-size: 20px;
+  --style-h3-font-size: 18px;
+  --style-h4-font-size: 16px;
+  --style-h5-font-size: 14px;
+  --style-h6-font-size: 12px;
 }
