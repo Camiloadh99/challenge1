@@ -7,11 +7,9 @@ export enum classNames {
 export interface IInputProps extends IGlobalProps {
   type?: string;
   placeholder?: string;
-  style?: any;
   currentValue: any;
   handleChange: any;
   readOnly?: boolean;
-  className?: string;
   styleName?: string;
   error?: boolean;
   labelError?: string;

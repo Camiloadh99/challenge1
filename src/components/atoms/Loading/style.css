@@ -1,0 +1,137 @@
+:root {
+  --loader-primary-rgb: 13, 110, 253;
+  --loader-secondary-rgb: 108, 117, 125;
+  --loader-success-rgb: 25, 135, 84;
+  --loader-info-rgb: 13, 202, 240;
+  --loader-warning-rgb: 255, 193, 7;
+  --loader-danger-rgb: 220, 53, 69;
+  --loader-light-rgb: 248, 249, 250;
+  --loader-dark-rgb: 33, 37, 41;
+  --loader-white-rgb: 255, 255, 255;
+  --loader-black-rgb: 0, 0, 0;
+  --loader-body-color-rgb: 33, 37, 41;
+  --loader-body-bg-rgb: 255, 255, 255;
+}
+
+.spinner-border {
+  --loader-spinner-width: 2rem;
+  --loader-spinner-height: 2rem;
+  --loader-spinner-vertical-align: -0.125em;
+  --loader-spinner-border-width: 0.25em;
+  --loader-spinner-animation-speed: 0.75s;
+  --loader-spinner-animation-name: spinner-border;
+  border: var(--loader-spinner-border-width) solid;
+  border-right-color: transparent;
+}
+.spinner-grow {
+  --loader-spinner-width: 2rem;
+  --loader-spinner-height: 2rem;
+  --loader-spinner-vertical-align: -0.125em;
+  --loader-spinner-animation-speed: 0.75s;
+  --loader-spinner-animation-name: spinner-grow;
+  background-color: currentcolor;
+  opacity: 0;
+}
+
+.spinner-border,
+.spinner-grow {
+  display: inline-block;
+  width: var(--loader-spinner-width);
+  height: var(--loader-spinner-height);
+  vertical-align: var(--loader-spinner-vertical-align);
+  border-radius: 50%;
+  -webkit-animation: var(--loader-spinner-animation-speed) linear infinite
+    var(--loader-spinner-animation-name);
+  animation: var(--loader-spinner-animation-speed) linear infinite
+    var(--loader-spinner-animation-name);
+}
+
+.size-small {
+  --loader-spinner-width: 2rem;
+  --loader-spinner-height: 2rem;
+  --loader-spinner-border-width: 0.25em;
+}
+.size-medium {
+  --loader-spinner-width: 3rem;
+  --loader-spinner-height: 3rem;
+  --loader-spinner-border-width: 0.35em;
+}
+.size-large {
+  --loader-spinner-width: 4rem;
+  --loader-spinner-height: 4rem;
+  --loader-spinner-border-width: 0.5em;
+}
+
+.velocity-slow {
+  --loader-spinner-animation-speed: 1.25s;
+}
+
+.velocity-medium {
+  --loader-spinner-animation-speed: 1s;
+}
+
+.velocity-fast {
+  --loader-spinner-animation-speed: 0.75s;
+}
+.text-primary {
+  --loader-text-opacity: 1;
+  color: rgba(var(--loader-primary-rgb), var(--loader-text-opacity)) !important;
+}
+
+.text-secondary {
+  --loader-text-opacity: 1;
+  color: rgba(
+    var(--loader-secondary-rgb),
+    var(--loader-text-opacity)
+  ) !important;
+}
+
+.text-success {
+  --loader-text-opacity: 1;
+  color: rgba(var(--loader-success-rgb), var(--loader-text-opacity)) !important;
+}
+.text-danger {
+  --loader-text-opacity: 1;
+  color: rgba(var(--loader-danger-rgb), var(--loader-text-opacity)) !important;
+}
+
+.text-warning {
+  --loader-text-opacity: 1;
+  color: rgba(var(--loader-warning-rgb), var(--loader-text-opacity)) !important;
+}
+.text-info {
+  --loader-text-opacity: 1;
+  color: rgba(var(--loader-info-rgb), var(--loader-text-opacity)) !important;
+}
+
+.text-light {
+  --loader-text-opacity: 1;
+  color: rgba(var(--loader-light-rgb), var(--loader-text-opacity)) !important;
+}
+
+.text-dark {
+  --loader-text-opacity: 1;
+  color: rgba(var(--loader-dark-rgb), var(--loader-text-opacity)) !important;
+}
+@keyframes spinner-border {
+  100% {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+  }
+}
+
+@keyframes spinner-grow {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { Children } from "react";
 import { ICol } from "./interface";
 export default function Column(props: ICol) {
-  const { size, xl, lg, md, style = {}, className = "", children } = props;
+  const { size, xl, lg, md, style = {}, className = "", children, id } = props;
   let gridClass = "col-12";
   if (size) {
     gridClass = `col-${size}`;
@@ -25,7 +25,7 @@ export default function Column(props: ICol) {
     gridClass = `col-${size} col-md-${md}`;
   }
   return (
-    <div className={`${gridClass} ${className}`} style={style}>
+    <div id={id} className={`${gridClass} ${className}`} style={style}>
       {children}
     </div>
   );

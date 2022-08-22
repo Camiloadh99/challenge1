@@ -6,4 +6,19 @@ import Column from "./atoms/Col/Column";
 import Row from "./atoms/Row/Row";
 import Image from "./atoms/Image/Image";
 import Table from "./atoms/Table/Table";
-export { MainComponent, Input, Button, Card, Column, Row, Image, Table };
+import Alert from "./atoms/Alert/Alert";
+import Loading from "./atoms/Loading/Loading";
+import CompleteLoader from "./molecules/CompleteLoader/CompleteLoader";
+export {
+  MainComponent,
+  Input,
+  Button,
+  Card,
+  Column,
+  Row,
+  Image,
+  Table,
+  Alert,
+  Loading,
+  CompleteLoader,
+};

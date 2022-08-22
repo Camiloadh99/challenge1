@@ -6,7 +6,5 @@ export interface IButton extends IGlobalProps {
   variant?: string;
   outlined?: boolean;
   size?: string;
-  className?: string;
-  style?: any;
   label: string;
 }

@@ -1,8 +1,19 @@
 import React, { useState } from "react";
-import { Input, Button, Card, Column, Row, Image, Table } from "components";
+import {
+  Input,
+  Button,
+  Card,
+  Column,
+  Row,
+  Image,
+  Table,
+  Loading,
+  CompleteLoader,
+} from "components";
 import { classNames } from "interfaces";
 export default function MainComponent(props: any) {
   const [inputOne, setInputOne] = useState<string>();
+  const [loading, setLoading] = useState<boolean>(false);
   return (
     <div
       style={{
@@ -76,6 +87,37 @@ export default function MainComponent(props: any) {
                 error
               />
             </Card>
+            <Card style={{ background: "#f3f3f3" }}>
+              <Row>
+                <Column size={3} className="px-4">
+                  <Image
+                    alt="pokemon"
+                    src="https://assets.pokemon.com/static2/_ui/img/og-default-image.jpeg"
+                  />
+                </Column>
+                <Column size={3} className="px-4">
+                  <Image
+                    alt="pokemon"
+                    rounded
+                    src="https://assets.pokemon.com/static2/_ui/img/og-default-image.jpeg"
+                  />
+                </Column>
+                <Column size={3} className="px-4">
+                  <Image
+                    alt="pokemon"
+                    thumbnail
+                    src="https://assets.pokemon.com/static2/_ui/img/og-default-image.jpeg"
+                  />
+                </Column>
+                <Column size={3} className="px-4">
+                  <Image
+                    circle
+                    alt="pokemon"
+                    src="https://assets.pokemon.com/static2/_ui/img/og-default-image.jpeg"
+                  />
+                </Column>
+              </Row>
+            </Card>
           </Column>
           <Column size={12} md={6} className="px-2">
             <Card>
@@ -91,6 +133,8 @@ export default function MainComponent(props: any) {
                   <Button onClick={() => {}} label="Button" variant="warning" />
                   <Button onClick={() => {}} label="Button" variant="danger" />
                   <Button onClick={() => {}} label="Button" variant="info" />
+                  <Button onClick={() => {}} label="Button" variant="light" />
+                  <Button onClick={() => {}} label="Button" variant="dark" />
                 </Column>
                 <Column size={12} className="px-4 py-4">
                   <Button
@@ -127,6 +171,18 @@ export default function MainComponent(props: any) {
                     onClick={() => {}}
                     label="Button"
                     variant="info"
+                    outlined
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="light"
+                    outlined
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant="dark"
                     outlined
                   />
                 </Column>
@@ -188,6 +244,87 @@ export default function MainComponent(props: any) {
                     size="large"
                   />
                 </Column>
+              </Row>
+            </Card>
+            <Card className="my-3">
+              <Row>
+                <Column size={12} className="px-4 py-3">
+                  <Loading animation="border" variant="primary" />
+                  <Loading animation="border" variant="secondary" />
+                  <Loading animation="border" variant="success" />
+                  <Loading animation="border" variant="danger" />
+                  <Loading animation="border" variant="warning" />
+                  <Loading animation="border" variant="info" />
+                  <Loading animation="border" variant="light" />
+                  <Loading animation="border" variant="dark" />
+                </Column>
+                <Column size={12} className="px-4 py-3">
+                  <Loading animation="grow" variant="primary" />
+                  <Loading animation="grow" variant="secondary" />
+                  <Loading animation="grow" variant="success" />
+                  <Loading animation="grow" variant="danger" />
+                  <Loading animation="grow" variant="warning" />
+                  <Loading animation="grow" variant="info" />
+                  <Loading animation="grow" variant="light" />
+                  <Loading animation="grow" variant="dark" />
+                </Column>
+                <Column size={12} className="px-4 py-3">
+                  <Loading animation="border" variant="primary" size="small" />
+                  <Loading animation="border" variant="primary" size="medium" />
+                  <Loading animation="border" variant="primary" size="large" />
+                  <Loading animation="grow" variant="primary" size="small" />
+                  <Loading animation="grow" variant="primary" size="medium" />
+                  <Loading animation="grow" variant="primary" size="large" />
+                </Column>
+                <Column size={12} className="px-4 py-3">
+                  <Loading
+                    animation="border"
+                    variant="primary"
+                    velocity="slow"
+                  />
+                  <Loading
+                    animation="border"
+                    variant="primary"
+                    velocity="medium"
+                  />
+                  <Loading
+                    animation="border"
+                    variant="primary"
+                    velocity="fast"
+                  />
+                  <Loading animation="grow" variant="primary" velocity="slow" />
+                  <Loading
+                    animation="grow"
+                    variant="primary"
+                    velocity="medium"
+                  />
+                  <Loading animation="grow" variant="primary" velocity="fast" />
+                </Column>
+                <Button
+                  label="show loading"
+                  onClick={() => {
+                    setLoading(!loading);
+                  }}
+                ></Button>
+                <div
+                  style={{
+                    zIndex: "30",
+                    position: "absolute",
+                    top: "0",
+                    right: "0",
+                  }}
+                >
+                  {loading && (
+                    <Button
+                      label="Close preview"
+                      onClick={() => {
+                        setLoading(!loading);
+                      }}
+                      variant="warning"
+                    ></Button>
+                  )}
+                </div>
+                <CompleteLoader show={loading} />
               </Row>
             </Card>
           </Column>

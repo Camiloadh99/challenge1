@@ -1,9 +1,9 @@
 import React from "react";
 import { ICard } from "./interface";
 export default function Card(props: ICard) {
-  const { className = "", style = {}, children } = props;
+  const { className = "", style = {}, children, id, name } = props;
   return (
-    <div className={`card ${className}`} style={style}>
+    <div id={id} className={`card ${className}`} style={style}>
       {children}
     </div>
   );

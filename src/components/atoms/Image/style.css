@@ -1,0 +1,26 @@
+.image-stl {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-rounded {
+  border-radius: 0.25rem !important;
+}
+
+.img-circle {
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+}
