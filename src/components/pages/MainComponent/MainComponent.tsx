@@ -10,7 +10,7 @@ import {
   Loading,
   CompleteLoader,
 } from "components";
-import { classNames } from "interfaces";
+import { classNamesInput, colorVariants } from "interfaces";
 export default function MainComponent(props: any) {
   const [inputOne, setInputOne] = useState<string>();
   const [loading, setLoading] = useState<boolean>(false);
@@ -31,21 +31,21 @@ export default function MainComponent(props: any) {
                 handleChange={(value: string) => {
                   setInputOne(value);
                 }}
-                styleName={classNames.filled_outlined}
+                styleName={classNamesInput.filled_outlined}
               />
               <Input
                 currentValue={inputOne}
                 handleChange={(value: string) => {
                   setInputOne(value);
                 }}
-                styleName={classNames.outlined}
+                styleName={classNamesInput.outlined}
               />
               <Input
                 currentValue={inputOne}
                 handleChange={(value: string) => {
                   setInputOne(value);
                 }}
-                styleName={classNames.filled}
+                styleName={classNamesInput.filled}
               />
               <Input
                 currentValue={inputOne}
@@ -60,7 +60,7 @@ export default function MainComponent(props: any) {
                 handleChange={(value: string) => {
                   setInputOne(value);
                 }}
-                styleName={classNames.filled_outlined}
+                styleName={classNamesInput.filled_outlined}
                 error
               />
               <Input
@@ -68,7 +68,7 @@ export default function MainComponent(props: any) {
                 handleChange={(value: string) => {
                   setInputOne(value);
                 }}
-                styleName={classNames.outlined}
+                styleName={classNamesInput.outlined}
                 error
               />
               <Input
@@ -76,7 +76,7 @@ export default function MainComponent(props: any) {
                 handleChange={(value: string) => {
                   setInputOne(value);
                 }}
-                styleName={classNames.filled}
+                styleName={classNamesInput.filled}
                 error
               />
               <Input
@@ -123,18 +123,46 @@ export default function MainComponent(props: any) {
             <Card>
               <Row>
                 <Column size={12} className="px-4">
-                  <Button onClick={() => {}} label="Button" variant="primary" />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant={colorVariants.primary}
+                  />
                   <Button
                     onClick={() => {}}
                     label="Button"
                     variant="secondary"
                   />
-                  <Button onClick={() => {}} label="Button" variant="success" />
-                  <Button onClick={() => {}} label="Button" variant="warning" />
-                  <Button onClick={() => {}} label="Button" variant="danger" />
-                  <Button onClick={() => {}} label="Button" variant="info" />
-                  <Button onClick={() => {}} label="Button" variant="light" />
-                  <Button onClick={() => {}} label="Button" variant="dark" />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant={colorVariants.success}
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant={colorVariants.warning}
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant={colorVariants.danger}
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant={colorVariants.info}
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant={colorVariants.light}
+                  />
+                  <Button
+                    onClick={() => {}}
+                    label="Button"
+                    variant={colorVariants.dark}
+                  />
                 </Column>
                 <Column size={12} className="px-4 py-4">
                   <Button

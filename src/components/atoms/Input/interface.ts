@@ -1,9 +1,10 @@
 import { IGlobalProps } from "components/interface";
-export enum classNames {
+export enum classNamesInput {
   filled = "filled",
   outlined = "outlined",
   filled_outlined = "filled-outlined",
 }
+
 export interface IInputProps extends IGlobalProps {
   type?: string;
   placeholder?: string;
