@@ -2,10 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
+import { ApplicationContextProvider } from "./context/ApplicationContext";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ApplicationContextProvider>
+      <App />
+    </ApplicationContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
