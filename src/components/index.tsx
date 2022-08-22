@@ -9,6 +9,7 @@ import Table from "./atoms/Table/Table";
 import Alert from "./atoms/Alert/Alert";
 import Loading from "./atoms/Loading/Loading";
 import CompleteLoader from "./molecules/CompleteLoader/CompleteLoader";
+import Heading from "./atoms/Heading/Heading";
 export {
   MainComponent,
   Input,
@@ -21,4 +22,5 @@ export {
   Alert,
   Loading,
   CompleteLoader,
+  Heading,
 };

@@ -8,7 +8,7 @@ export default function Button(props: IButton) {
     type = "button",
     variant = "primary",
     outlined,
-    size = "large",
+    size = "medium",
     className = "",
     style = {},
     label = "Button",

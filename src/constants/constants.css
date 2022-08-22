@@ -3,33 +3,46 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: var(--style-body-font-family);
+}
 h1 {
   font-size: var(--style-h1-font-size);
-  line-height: 1;
+  line-height: var(--style-body-font-line-height);
 }
 h2 {
   font-size: var(--style-h2-font-size);
-  line-height: 1;
+  line-height: var(--style-body-font-line-height);
 }
 h3 {
   font-size: var(--style-h3-font-size);
   font-weight: 300;
-  line-height: 1;
+  line-height: var(--style-body-font-line-height);
 }
 h4 {
   font-size: var(--style-h4-font-size);
   font-weight: 300;
-  line-height: 1;
+  line-height: var(--style-body-font-line-height);
 }
 h5 {
   font-size: var(--style-h5-font-size);
   font-weight: 300;
-  line-height: 1;
+  line-height: var(--style-body-font-line-height);
 }
 h6 {
   font-size: var(--style-h6-font-size);
   font-weight: 300;
-  line-height: 1;
+  line-height: var(--style-body-font-line-height);
+}
+p {
+  font-size: var(--style-h3-font-size);
+  font-weight: 300;
+  line-height: var(--style-body-font-line-height);
+}
+span {
+  font-size: var(--style-h3-font-size);
+  font-weight: 300;
+  line-height: var(--style-body-font-line-height);
 }
 
 .center {

@@ -6,4 +6,13 @@
   --style-h4-font-size: 16px;
   --style-h5-font-size: 14px;
   --style-h6-font-size: 12px;
+  --style-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --style-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --style-body-font-family: var(--style-font-sans-serif);
+  --style-btn-font-family: var(--style-font-sans-serif);
+  --style-body-font-line-height: 1.5;
 }
