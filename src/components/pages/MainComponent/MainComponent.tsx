@@ -90,27 +90,27 @@ export default function MainComponent(props: any) {
             </Card>
             <Card style={{ background: "#f3f3f3" }}>
               <Row>
-                <Column size={12} lg={3} className="px-4">
+                <Column size={12} md={3} className="px-4">
                   <Image
                     alt="pokemon"
                     src="https://assets.pokemon.com/static2/_ui/img/og-default-image.jpeg"
                   />
                 </Column>
-                <Column size={12} lg={3} className="px-4">
+                <Column size={12} md={3} className="px-4">
                   <Image
                     alt="pokemon"
                     rounded
                     src="https://assets.pokemon.com/static2/_ui/img/og-default-image.jpeg"
                   />
                 </Column>
-                <Column size={12} lg={3} className="px-4">
+                <Column size={12} md={3} className="px-4">
                   <Image
                     alt="pokemon"
                     thumbnail
                     src="https://assets.pokemon.com/static2/_ui/img/og-default-image.jpeg"
                   />
                 </Column>
-                <Column size={12} lg={3} className="px-4">
+                <Column size={12} md={3} className="px-4">
                   <Image
                     circle
                     alt="pokemon"
