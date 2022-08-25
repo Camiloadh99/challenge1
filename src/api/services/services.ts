@@ -1,6 +1,6 @@
-import { axios as http } from "../../frameworks_and_drivers/Axios";
+import { axios as http } from "frameworks_and_drivers/external_interfaces/Axios";
 import { IGetRickMorty, IGetOneRickMorty } from "../interfaces/interfaz";
-import { BASE_URL } from "../../config/settings.json";
+import { BASE_URL } from "config/settings.json";
 import HelpService from "../HelpService";
 
 export const getCharacters = async (props: any) => {
