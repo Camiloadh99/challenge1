@@ -4,38 +4,60 @@ export interface AxiosCall<T> {
   call: Promise<AxiosResponse<T>>;
   controller?: AbortController;
 }
-export interface IGetRickMorty {
-  info: any;
-  results: [
-    {
-      image: any;
-      name: string;
-      last_name: string;
-      species: string;
-      id: string;
-    }
-  ];
-}
-export interface ICurrentApi {
+
+export interface IApi {
+  created: string;
+  episode: string[];
+  gender: string;
+  location: {
+    name: string;
+    url: string;
+  };
+  origin: {
+    name: string;
+    url: string;
+  };
   image: any;
   name: string;
-  last_name: string;
+  lastName: string; //ejemplo
   species: string;
   id: string;
 }
 
-export interface IApi {
-  image: any;
+export interface ICurrentApi {
+  created: string;
+  episode: string[];
+  gender: string;
+  location: {
+    name: string;
+    url: string;
+  };
+  origin: {
+    name: string;
+    url: string;
+  };
+  image: string;
   name: string;
-  lastName: string;
+  last_name: string; //ejemplo
   species: string;
   id: string;
 }
 
 export interface IGetOneRickMorty {
-  image: any;
+  created: string;
+  episode: string[];
+  gender: string;
+  location: {
+    name: string;
+    url: string;
+  };
+  origin: {
+    name: string;
+    url: string;
+  };
+  image: string;
   name: string;
-  last_name: string;
+  last_name: string; //ejemplo
   species: string;
   id: string;
 }

@@ -12,20 +12,21 @@ import {
   Heading,
 } from "components";
 import { classNamesInput, colorVariants } from "interfaces";
-import { getCoolRick, getCharacters } from "api";
+import { getCoolRick } from "api";
 import useFetchAndLoad from "hooks/useFetchAndLoad";
 import useAsync from "hooks/useAsync";
-
+import { createAddapterApi } from "api/adapters/apiAdapter";
 export default function MainComponent(props: any) {
   const [inputOne, setInputOne] = useState<string>();
   const [loadingComponent, setLoadingComponent] = useState<boolean>(false);
 
   //API CALL
   const { loading, callEndpoint } = useFetchAndLoad();
-  const [morty, setMorty] = useState(null);
+  const [morty, setMorty] = useState({});
   const getApiData = async () => await callEndpoint(getCoolRick({}));
   const adaptMorty = (data: any) => {
-    setMorty(data);
+    const newData = createAddapterApi(data);
+    setMorty(newData);
   };
   useAsync(getApiData, adaptMorty, () => {});
   console.log({ morty });

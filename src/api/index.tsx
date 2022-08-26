@@ -1,9 +1,5 @@
-import {
-  getCharacters,
-  getOneCharacter,
-  getCoolRick,
-} from "./services/services";
-import { IGetOneRickMorty, IGetRickMorty } from "./interfaces/interfaz";
+import { getCoolRick } from "./services/services";
+import { IGetOneRickMorty } from "./interfaces/interfaz";
 
-export { getCharacters, getOneCharacter, getCoolRick };
-export type { IGetOneRickMorty, IGetRickMorty };
+export { getCoolRick };
+export type { IGetOneRickMorty };
