@@ -12,9 +12,24 @@ import {
   Heading,
 } from "components";
 import { classNamesInput, colorVariants } from "interfaces";
+import { getCoolRick, getCharacters } from "api";
+import useFetchAndLoad from "hooks/useFetchAndLoad";
+import useAsync from "hooks/useAsync";
+
 export default function MainComponent(props: any) {
   const [inputOne, setInputOne] = useState<string>();
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loadingComponent, setLoadingComponent] = useState<boolean>(false);
+
+  //API CALL
+  const { loading, callEndpoint } = useFetchAndLoad();
+  const [morty, setMorty] = useState(null);
+  const getApiData = async () => await callEndpoint(getCoolRick({}));
+  const adaptMorty = (data: any) => {
+    setMorty(data);
+  };
+  useAsync(getApiData, adaptMorty, () => {});
+  console.log({ morty });
+
   return (
     <div
       style={{
@@ -353,7 +368,7 @@ export default function MainComponent(props: any) {
                 <Button
                   label="show loading"
                   onClick={() => {
-                    setLoading(!loading);
+                    setLoadingComponent(!loadingComponent);
                   }}
                 ></Button>
                 <div
@@ -364,11 +379,11 @@ export default function MainComponent(props: any) {
                     right: "0",
                   }}
                 >
-                  {loading && (
+                  {loadingComponent && (
                     <Button
                       label="Close preview"
                       onClick={() => {
-                        setLoading(!loading);
+                        setLoadingComponent(!loadingComponent);
                       }}
                       variant="warning"
                     ></Button>

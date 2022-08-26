@@ -1,3 +1,9 @@
+import { AxiosResponse } from "frameworks_and_drivers/external_interfaces/Axios";
+
+export interface AxiosCall<T> {
+  call: Promise<AxiosResponse<T>>;
+  controller?: AbortController;
+}
 export interface IGetRickMorty {
   info: any;
   results: [
