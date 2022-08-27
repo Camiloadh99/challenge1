@@ -9,7 +9,7 @@ export interface IInputProps extends IGlobalProps {
   type?: string;
   placeholder?: string;
   currentValue: any;
-  handleChange: any;
+  handleChange: Function;
   readOnly?: boolean;
   styleName?: string;
   error?: boolean;
