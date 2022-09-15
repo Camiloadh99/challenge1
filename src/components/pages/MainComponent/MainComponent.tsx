@@ -10,6 +10,7 @@ import {
   Loading,
   CompleteLoader,
   Heading,
+  Dropdown,
 } from "components";
 import { classNamesInput, colorVariants } from "interfaces";
 import { getCoolRick } from "api";
@@ -20,6 +21,17 @@ export default function MainComponent(props: any) {
   const [inputOne, setInputOne] = useState<string>();
   const [loadingComponent, setLoadingComponent] = useState<boolean>(false);
 
+  //DropDown
+  const [option, setOption] = useState("");
+  const options: string[] = [
+    "HTML",
+    "CSS",
+    "JS",
+    "REACT",
+    "REACT1",
+    "REACt2",
+    "REACT3",
+  ];
   //API CALL
   const { loading, callEndpoint } = useFetchAndLoad();
   const [morty, setMorty] = useState({});
@@ -103,6 +115,14 @@ export default function MainComponent(props: any) {
                 }}
                 error
               />
+              <div className="py-4">
+                <Heading type="h4">Selected {option}</Heading>
+                <Dropdown
+                  options={options}
+                  selectedItem={option}
+                  setSelectedItem={setOption}
+                />
+              </div>
             </Card>
             <Card style={{ background: "#f3f3f3" }}>
               <Row>

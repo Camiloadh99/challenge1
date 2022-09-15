@@ -10,6 +10,7 @@ import Alert from "./atoms/Alert/Alert";
 import Loading from "./atoms/Loading/Loading";
 import CompleteLoader from "./molecules/CompleteLoader/CompleteLoader";
 import Heading from "./atoms/Heading/Heading";
+import Dropdown from "./atoms/DropDown/Dropdown";
 export {
   MainComponent,
   Input,
@@ -23,4 +24,5 @@ export {
   Loading,
   CompleteLoader,
   Heading,
+  Dropdown,
 };
