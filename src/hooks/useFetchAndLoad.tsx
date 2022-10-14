@@ -1,4 +1,4 @@
-import { AxiosCall } from "api/interfaces/interfaz";
+import { AxiosCall } from "pages/items/models/interfaz";
 import { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
 
