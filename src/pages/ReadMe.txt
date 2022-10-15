@@ -2,7 +2,8 @@ Routes:
     - La ruta principal se crea referenciando a la primera pagina Ej /user
     - Si se requieren rutas secundarias (/user/info) se puede crear un navigation dentro 
       de la carpeta las cuales deben contar con lazy loading. 
-
+    https://www.youtube.com/watch?v=UVsX7A2wfLo&t=3724s&ab_channel=GentlemanProgramming 
+    
 Context:
     - Context se usa para pasar informacion dentro de los componentes en la pagina
     - Se crea un contexto por cada pagina
