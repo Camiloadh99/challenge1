@@ -1,7 +1,7 @@
 import { ICurrentApi, IApi } from "pages/items/models/interfaz";
 //interfaz = model
-export const createAddapterApi = (apiResponse: ICurrentApi) => {
-  const FormattedUser: IApi = {
+export const createAddapterApi = (apiResponse: ICurrentApi): IApi => {
+  return {
     created: apiResponse.created,
     episode: apiResponse.episode,
     gender: apiResponse.gender,
@@ -19,5 +19,4 @@ export const createAddapterApi = (apiResponse: ICurrentApi) => {
     species: apiResponse.species,
     id: apiResponse.id,
   };
-  return FormattedUser;
 };

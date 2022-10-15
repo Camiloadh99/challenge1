@@ -3,6 +3,7 @@ export interface User {
   name: string;
   status: string;
   species: string;
+  token?: string;
 }
 
 interface IUserAssociatedUrl {
@@ -35,4 +36,5 @@ export const UserEmptyState: User = {
   name: "",
   status: "",
   species: "",
+  token: "",
 };

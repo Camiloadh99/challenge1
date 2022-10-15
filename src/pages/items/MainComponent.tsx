@@ -9,10 +9,9 @@ import {
   Table,
   Loading,
   CompleteLoader,
-  Heading,
   Dropdown,
-} from "pages/items/components";
-import { classNamesInput } from "./components/atoms/Input/interface";
+} from "components";
+import { classNamesInput } from "../../components/atoms/Input/interface";
 import { colorVariants } from "models";
 import { getCoolRick } from "./services";
 import useFetchAndLoad from "hooks/useFetchAndLoad";
@@ -118,7 +117,7 @@ export default function MainComponent(props: any) {
                 error
               />
               <div className="py-4">
-                <Heading type="h4">Selected {option}</Heading>
+                <h4>Selected {option}</h4>
                 <Dropdown
                   options={options}
                   selectedItem={option}
@@ -326,9 +325,9 @@ export default function MainComponent(props: any) {
                   <Loading animation="border" variant="dark" />
                 </Column>
                 <Column size={6} className="px-4 py-3">
-                  <Heading type="h3">
+                  <h3>
                     <b>Animation: border</b>
-                  </Heading>
+                  </h3>
                 </Column>
 
                 <Column size={6} className="px-4 py-3">
@@ -342,9 +341,9 @@ export default function MainComponent(props: any) {
                   <Loading animation="grow" variant="dark" />
                 </Column>
                 <Column size={6} className="px-4 py-3">
-                  <Heading type="h3">
+                  <h3>
                     <b>Animation: grow</b>
-                  </Heading>
+                  </h3>
                 </Column>
                 <Column size={6} className="px-4 py-3">
                   <Loading animation="border" variant="primary" size="small" />
@@ -355,9 +354,9 @@ export default function MainComponent(props: any) {
                   <Loading animation="grow" variant="primary" size="large" />
                 </Column>
                 <Column size={6} className="px-4 py-3">
-                  <Heading type="h3">
+                  <h3>
                     <b>Size</b>
-                  </Heading>
+                  </h3>
                 </Column>
                 <Column size={6} className="px-4 py-3">
                   <Loading
@@ -384,9 +383,9 @@ export default function MainComponent(props: any) {
                   <Loading animation="grow" variant="primary" velocity="fast" />
                 </Column>
                 <Column size={6} className="px-4 py-3">
-                  <Heading type="h3">
+                  <h3>
                     <b>Velocity</b>
-                  </Heading>
+                  </h3>
                 </Column>
                 <Button
                   label="show loading"
@@ -416,30 +415,30 @@ export default function MainComponent(props: any) {
               </Row>
             </Card>
             <Card className="my-3">
-              <Heading type="h1">
+              <h1>
                 H1 - Lorem Ipsum es simplemente el texto de relleno de las
                 imprentas y archivos
-              </Heading>
-              <Heading type="h2">
+              </h1>
+              <h2>
                 H2 - Lorem Ipsum es simplemente el texto de relleno de las
                 imprentas y archivos
-              </Heading>
-              <Heading type="h3">
+              </h2>
+              <h3>
                 H3 - Lorem Ipsum es simplemente el texto de relleno de las
                 imprentas y archivos
-              </Heading>
-              <Heading type="h4">
+              </h3>
+              <h4>
                 H4 - Lorem Ipsum es simplemente el texto de relleno de las
                 imprentas y archivos
-              </Heading>
-              <Heading type="h5">
+              </h4>
+              <h5>
                 H5 - Lorem Ipsum es simplemente el texto de relleno de las
                 imprentas y archivos
-              </Heading>
-              <Heading type="h6">
+              </h5>
+              <h6>
                 H6 - Lorem Ipsum es simplemente el texto de relleno de las
                 imprentas y archivos
-              </Heading>
+              </h6>
             </Card>
           </Column>
         </Row>
