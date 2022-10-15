@@ -14,3 +14,10 @@ Redux:
 Componentes
     - Cada page debe tener sus componentes, en la carpeta de componentes externa solo pueden 
       estar aquellos que utilice toda la app
+
+Usar props lo menos posible:
+ - Se puede hacer un componente generico que pida props, pero al momento de usarlo se deben crear nuevos componentes 
+   que ya sean especificos de la pagina:
+   digamos en un formulario, los inputs deben estar en un componente con la logica de envio a contexto o Redux
+   y en otro componente el boton que solamente trae esa informacion y hace su logica correspondiente, 
+   la pagina no debe entender de logica ni de lo que esta pasando con sus componentes hijos
