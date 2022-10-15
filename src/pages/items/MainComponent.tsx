@@ -34,6 +34,7 @@ export default function MainComponent(props: any) {
     "REACT3",
   ];
   //API CALL
+
   const { loading, callEndpoint } = useFetchAndLoad();
   const [morty, setMorty] = useState({});
   const getApiData = async () => await callEndpoint(getCoolRick({}));
@@ -411,7 +412,7 @@ export default function MainComponent(props: any) {
                     ></Button>
                   )}
                 </div>
-                <CompleteLoader show={loading} />
+                <CompleteLoader show={loadingComponent} />
               </Row>
             </Card>
             <Card className="my-3">

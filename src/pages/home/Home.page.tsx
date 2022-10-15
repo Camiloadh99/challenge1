@@ -8,11 +8,13 @@ import "./style/style.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-div">
       <h2>Hello World</h2>
-      <CreateHomeButton />
-      <ModifyHomeButton />
-      <ResetHomeButton />
+      <div className="center">
+        <CreateHomeButton />
+        <ModifyHomeButton />
+        <ResetHomeButton />
+      </div>
     </div>
   );
 }

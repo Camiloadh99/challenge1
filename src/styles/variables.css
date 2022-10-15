@@ -15,4 +15,8 @@
   --style-body-font-family: var(--style-font-sans-serif);
   --style-btn-font-family: var(--style-font-sans-serif);
   --style-body-font-line-height: 1.5;
+
+  --style-margin-small: 16px;
+  --style-margin-medium: 32px;
+  --style-margin-large: 64px;
 }

@@ -8,9 +8,17 @@ function App() {
   const cart = useSelector((state: AppStore) => state.cart);
   return (
     <div>
-      <span>{user.id}</span>
-      <span>{user.name}</span>
-      <div>{JSON.stringify(user)}</div>
+      <span className="redux-headings">{user.id}</span>
+      <span className="redux-headings">{user.name}</span>
+      <div className="redux-headings">
+        {JSON.stringify(user)}
+        <div className="pt-4">
+          <a style={{ margin: "0 auto" }} href="/home">
+            <button>Redux</button>
+          </a>
+        </div>
+      </div>
+
       <Navigation />
     </div>
   );
