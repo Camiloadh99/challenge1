@@ -21,8 +21,8 @@ function Input(props: IInputProps) {
   // filled , outlined , border
 
   const handleOnInputChange = (event: any) => {
-    const cliendData = event.target.value;
-    handleChange(cliendData);
+    const data = event.target.value;
+    handleChange(data);
   };
   const styleError = error ? "error" : "";
 
