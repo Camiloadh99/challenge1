@@ -7,11 +7,15 @@ The idea of this context it is allow a mechanism to pass the information between
 type contextValues = {
   item: string;
   setItem(item: string): void;
+  formItemOne: string;
+  setFormItemOne(formItemOne: string): void;
 };
 
 const defaultValues = {
   item: "",
   setItem: () => {},
+  formItemOne: "",
+  setFormItemOne: () => {},
 };
 
 const ItemContext = createContext<contextValues>(defaultValues);
@@ -20,10 +24,13 @@ const ItemContextProvider = (props: any) => {
   const { children } = props;
 
   const [item, setItem] = useState<string>("");
+  const [formItemOne, setFormItemOne] = useState("");
 
   const contextValues = {
     item,
     setItem,
+    formItemOne,
+    setFormItemOne,
   };
 
   return (

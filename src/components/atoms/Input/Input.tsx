@@ -1,16 +1,15 @@
-import React from "react";
 import "./style.css";
 import { IInputProps } from "./interface";
 
 function Input(props: IInputProps) {
   const {
-    handleChange,
+    onChange,
     type = "text",
     name,
     placeholder,
     readOnly,
     style = {},
-    currentValue,
+    value,
     className = "",
     id,
     styleName = "standar",
@@ -20,10 +19,6 @@ function Input(props: IInputProps) {
 
   // filled , outlined , border
 
-  const handleOnInputChange = (event: any) => {
-    const data = event.target.value;
-    handleChange(data);
-  };
   const styleError = error ? "error" : "";
 
   return (
@@ -36,8 +31,8 @@ function Input(props: IInputProps) {
         placeholder={placeholder}
         readOnly={readOnly}
         style={style}
-        onChange={(value) => handleOnInputChange(value)}
-        value={currentValue}
+        onChange={onChange}
+        value={value}
       ></input>
       {error && <h5 className="text-error">{labelError}</h5>}
     </form>

@@ -8,8 +8,8 @@ export enum classNamesInput {
 export interface IInputProps extends IGlobalProps {
   type?: string;
   placeholder?: string;
-  currentValue: any;
-  handleChange: Function;
+  value: any;
+  onChange: any;
   readOnly?: boolean;
   styleName?: string;
   error?: boolean;
