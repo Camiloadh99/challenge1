@@ -13,17 +13,11 @@ import {
 } from "components";
 import { classNamesInput } from "components/atoms/Input/interface";
 import { colorVariants } from "models";
-
-import { getCoolRick } from "../services";
-import useFetchAndLoad from "hooks/useFetchAndLoad";
-import useAsync from "hooks/useAsync";
-import { createAddapterApi } from "pages/items/adapters/apiAdapter";
 import { useInputValue, useInputValueContext } from "hooks/changeInputValue";
 import { useItemContext } from "../context/ItemContext";
 
 export default function ShowItems() {
   const { setFormItemOne } = useItemContext();
-
   const inputOne = useInputValueContext("", setFormItemOne);
   const inputTwo = useInputValue(1);
   const [loadingComponent, setLoadingComponent] = useState<boolean>(false);
@@ -39,16 +33,7 @@ export default function ShowItems() {
     "REACt2",
     "REACT3",
   ];
-  //API CALL
 
-  const { loading, callEndpoint } = useFetchAndLoad();
-  const [morty, setMorty] = useState({});
-  const getApiData = async () => await callEndpoint(getCoolRick({}));
-  const adaptMorty = (data: any) => {
-    const newData = createAddapterApi(data);
-    setMorty(newData);
-  };
-  useAsync(getApiData, adaptMorty, () => {});
   return (
     <div
       style={{
