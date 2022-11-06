@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Input,
   Button,
@@ -15,11 +15,37 @@ import { classNamesInput } from "components/atoms/Input/interface";
 import { colorVariants } from "models";
 import { useInputValue, useInputValueContext } from "hooks/changeInputValue";
 import { useItemContext } from "../context/ItemContext";
+import useFetchAndLoad from "hooks/useFetchAndLoad";
+import { getCoolRick } from "../services";
+import useAsync from "hooks/useAsync";
+
+const Component1 = (props: any) => {
+  const { inputOne } = props;
+  const [morty, setMorty] = useState(null);
+  const { loading, callEndpoint } = useFetchAndLoad();
+  const getApiData = async () => {
+    let query = {};
+    if (inputOne) {
+      query = { ...query, inputOne };
+    }
+    const result = await callEndpoint(
+      getCoolRick({ ...query, limit: 10, offset: 0 })
+    );
+    return result;
+  };
+  const adaptMorty = (data: any) => {
+    setMorty(data.name);
+  };
+
+  useAsync(getApiData, adaptMorty, () => {});
+  return <div>{loading ? "LOADING" : morty}</div>;
+};
 
 export default function ShowItems() {
   const { setFormItemOne } = useItemContext();
   const inputOne = useInputValueContext("", setFormItemOne);
   const inputTwo = useInputValue(1);
+
   const [loadingComponent, setLoadingComponent] = useState<boolean>(false);
 
   //DropDown
@@ -387,6 +413,7 @@ export default function ShowItems() {
                 imprentas y archivos
               </h6>
             </Card>
+            <Component1 {...inputOne} />
           </Column>
         </Row>
       </div>
