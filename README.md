@@ -1,3 +1,14 @@
+# Challenge Individual #1
+
+## Inicio del proyecto al clonar el repo:
+
+```
+   npm i
+   npm start
+```
+
+## Creado por Camiloadh99
+
 # Sign Up Form
 
 Tu reto es construir este componente y conseguir que se parezca lo más posible al diseño.
