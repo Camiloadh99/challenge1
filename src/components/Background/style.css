@@ -21,6 +21,13 @@
   text-align: center;
   font-style: italic;
 }
+@media screen and (max-width: 900px) {
+  .author {
+    position: static;
+    padding-bottom: 32px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .page__background {
     background-image: url("assets/bg-intro-mobile.png");
