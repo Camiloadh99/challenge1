@@ -96,9 +96,10 @@ export default function Form() {
         </form>
 
         <h6 className="form__terms flex">
-          By clicking the button you agree to our{" "}
+          By clicking the button you agree to our
           <span className="form__terms form__terms--color-red">
             <div
+              className="pl-1"
               onClick={() => {
                 navigate("/terms-and-conditions");
               }}
