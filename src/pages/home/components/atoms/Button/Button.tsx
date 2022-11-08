@@ -3,8 +3,11 @@ import { IButtonHome } from "./models/button.model";
 import "./style.css";
 export default function Button({ label, onClick }: IButtonHome) {
   return (
-    <button className="home-button" onClick={onClick}>
-      {label}
-    </button>
+    <input
+      className="button-stl btn-outline-success"
+      onClick={onClick}
+      type="submit"
+      value={label}
+    ></input>
   );
 }

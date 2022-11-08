@@ -1,5 +1,3 @@
-import { ILoading } from "components/atoms/Loading/interface";
-
-export interface ICompleteLoader extends ILoading {
+export interface ICompleteLoader {
   show: boolean;
 }

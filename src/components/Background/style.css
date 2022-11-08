@@ -1,0 +1,23 @@
+.total-page {
+  box-sizing: border-box;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.page__background {
+  background-image: url("assets/bg-intro-desktop.png");
+}
+
+.page__background--over {
+  background-color: var(--style-color-primary);
+}
+
+.author {
+  margin-top: -20px;
+  font-style: italic;
+  text-align: center;
+}
+@media screen and (max-width: 375px) {
+  .page__background {
+    background-image: url("assets/bg-intro-mobile.png");
+  }
+}

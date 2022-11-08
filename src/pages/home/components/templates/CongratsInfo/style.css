@@ -1,0 +1,35 @@
+.congrats-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.congrats-text {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.congrats-button-container {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.congrats-container > button {
+  margin: 0 auto;
+}
+.congrats-container > h2 {
+  margin: 0 auto;
+}
+
+.w100 {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .congrats-button-container {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

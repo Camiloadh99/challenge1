@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  max-width: 100vw;
 }
 body {
   font-family: var(--style-body-font-family);
@@ -22,7 +23,7 @@ h3 {
 h4 {
   font-size: var(--style-h4-font-size);
   font-weight: 300;
-  line-height: var(--style-body-font-line-height);
+  line-height: 1.5;
 }
 h5 {
   font-size: var(--style-h5-font-size);
@@ -40,7 +41,7 @@ p {
   line-height: var(--style-body-font-line-height);
 }
 span {
-  font-size: var(--style-h3-font-size);
+  font-size: var(--style-h6-font-size);
   font-weight: 300;
   line-height: var(--style-body-font-line-height);
 }

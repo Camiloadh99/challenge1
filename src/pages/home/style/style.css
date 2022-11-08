@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .home-div h2 {
   font-size: 8rem !important;
   text-align: center;
@@ -20,6 +23,12 @@ a {
 }
 a:hover {
   color: #535bf2;
+}
+.container-home {
+  min-height: 100vh;
+}
+.center-info {
+  margin: auto;
 }
 
 body {
@@ -49,7 +58,19 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.fade-in {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+}
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -67,4 +88,10 @@ button:focus-visible {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  .center-info {
+    margin: none;
+  }
 }

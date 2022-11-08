@@ -1,0 +1,19 @@
+.form__terms {
+  font-size: var(--style-h6-font-size);
+  font-weight: 500;
+  color: var(--style-color-grayish);
+  text-align: center;
+}
+
+.form__terms--color-red {
+  color: var(--style-color-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--style-color-primary) !important;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}

@@ -1,22 +1,25 @@
 :root {
   --style-input-heigth: 30px;
   --style-h1-font-size: 24px;
-  --style-h2-font-size: 20px;
+  --style-h2-font-size: 42px;
   --style-h3-font-size: 18px;
   --style-h4-font-size: 16px;
   --style-h5-font-size: 14px;
   --style-h6-font-size: 12px;
-  --style-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --style-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  --style-font: "Poppins";
 
-  --style-body-font-family: var(--style-font-sans-serif);
-  --style-btn-font-family: var(--style-font-sans-serif);
-  --style-body-font-line-height: 1.5;
+  --style-body-font-family: var(--style-font);
+  --style-btn-font-family: var(--style-font);
+  --style-body-font-line-height: 1.2;
 
   --style-margin-small: 16px;
   --style-margin-medium: 32px;
   --style-margin-large: 64px;
+
+  --style-color-primary: hsl(0, 100%, 74%);
+  --style-color-secondary: hsl(154, 59%, 51%);
+
+  --style-color-accent: hsl(248, 32%, 49%);
+  --style-color-dark-blue: hsl(249, 10%, 26%);
+  --style-color-grayish: hsl(246, 25%, 77%);
 }

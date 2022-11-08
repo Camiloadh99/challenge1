@@ -1,4 +1,4 @@
-.button-stl {
+.badge-stl {
   width: 100%;
   height: 58px;
   --style-btn-padding-x: 0.75rem;
@@ -18,9 +18,9 @@
     rgba(var(--color-btn-focus-shadow-rgb), 0.5);
   display: inline-block;
   padding: var(--style-btn-padding-y) var(--style-btn-padding-x);
-  font-family: var(--style-btn-font-family);
-  font-size: 16px;
-  font-weight: 500;
+  font-family: "Poppins";
+  font-size: var(--style-btn-font-size);
+  font-weight: var(--style-btn-font-weight);
   line-height: var(--style-btn-line-height);
   color: var(--color-btn-color);
   text-align: center;
@@ -34,46 +34,29 @@
   background-color: var(--color-btn-bg);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  background-color: hsl(154, 59%, 50%);
-  box-shadow: -2px 4px 0 hsl(154, 59%, 45%);
-  transition: translate(0, -0.75em, -1em);
-  -webkit-transition: translate(0, -0.75em, -1em);
-  -moz-transition: translate(0, -0.75em, -1em);
-  -ms-transition: translate(0, -0.75em, -1em);
-  -o-transition: translate(0, -0.75em, -1em);
-  margin: 14px 0;
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 0 10px 0 hsl(248, 32%, 40%, 0.3);
 }
 
-.btn-check:focus + .button-stl,
-.button-stl:focus,
-.button-stl:hover {
+.badge-stl:focus,
+.badge-stl:hover {
   color: var(--color-btn-hover-color);
   background-color: var(--color-btn-hover-bg);
   border-color: var(--color-btn-hover-border-color);
 }
 
-.button-stl:active {
-  color: var(--color-btn-hover-color);
-  background-color: var(--color-btn-active-bg);
-  transform: translate(0, 0.15em);
-  -webkit-transform: translate(0, 0.15em);
-  -moz-transform: translate(0, 0.15em);
-  -ms-transform: translate(0, 0.15em);
-  -o-transform: translate(0, 0.15em);
-}
-
-.btn-outline-success {
+.badge-outline {
   --color-btn-color: #fff;
-  --color-btn-border-color: hsl(154, 59%, 51%);
+  --color-btn-border-color: hsl(248, 32%, 49%);
   --color-btn-hover-color: #fff;
-  --color-btn-hover-bg: hsl(154, 59%, 60%);
-  --color-btn-hover-border-color: hsl(154, 59%, 60%);
+  --color-btn-hover-bg: hsl(248, 32%, 53%);
+  --color-btn-hover-border-color: hsl(248, 32%, 65%);
   --color-btn-focus-shadow-rgb: 25, 135, 84;
   --color-btn-active-color: #fff;
-  --color-btn-active-bg: hsl(154, 59%, 40%);
+  --color-btn-active-bg: hsl(248, 32%, 40%);
   --color-btn-active-border-color: #fff;
   --color-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --color-btn-disabled-color: #198754;
+  --color-btn-disabled-color: hsl(248, 32%, 35%);
   --color-btn-disabled-bg: transparent;
   --color-gradient: none;
 }

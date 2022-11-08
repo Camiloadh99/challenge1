@@ -1,26 +1,5 @@
-import MainComponent from "../pages/items/MainComponent";
-import Input from "./atoms/Input/Input";
-import Button from "./atoms/Button/Button";
-import Card from "./atoms/Card/Card";
-import Column from "./atoms/Col/Column";
-import Row from "./atoms/Row/Row";
-import Image from "./atoms/Image/Image";
-import Table from "./atoms/Table/Table";
-import Alert from "./atoms/Alert/Alert";
 import Loading from "./atoms/Loading/Loading";
 import CompleteLoader from "./molecules/CompleteLoader/CompleteLoader";
-import Dropdown from "./atoms/DropDown/Dropdown";
-export {
-  MainComponent,
-  Input,
-  Button,
-  Card,
-  Column,
-  Row,
-  Image,
-  Table,
-  Alert,
-  Loading,
-  CompleteLoader,
-  Dropdown,
-};
+import Background from "./Background/Background";
+
+export { Loading, CompleteLoader, Background };
