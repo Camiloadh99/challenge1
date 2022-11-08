@@ -17,3 +17,7 @@ a {
   display: flex;
   justify-content: center;
 }
+
+span {
+  cursor: pointer;
+}

@@ -94,4 +94,8 @@ button:focus-visible {
   .center-info {
     margin: none;
   }
+
+  .container-home {
+    min-height: none;
+  }
 }

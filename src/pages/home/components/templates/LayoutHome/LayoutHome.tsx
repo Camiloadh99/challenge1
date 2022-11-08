@@ -12,12 +12,12 @@ export default function LayoutHome() {
       {!succesClaim ? (
         <div className="row container-home">
           <div className="col-lg-1 col-1"></div>
-          <div className="col-lg-5 col-10 center-info fade-in">
+          <div className="col-10 col-lg-5  center-info fade-in">
             <Information />
           </div>
           <div className="col-lg-0 col-1"></div>
           <div className="col-lg-0 col-1"></div>
-          <div className="col-lg-5 col-10 center-info fade-in">
+          <div className="col-lg-5 col-10 center-info fade-in pb-5">
             <Form />
           </div>
           <div className="col-lg-1 col-1"></div>

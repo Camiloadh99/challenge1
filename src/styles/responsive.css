@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 .row {
-  --wc-gutter-x: 1.5rem;
+  --wc-gutter-x: 0;
   --wc-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;

@@ -95,17 +95,17 @@ export default function Form() {
           <Button label={label.buttonLabel} />
         </form>
 
-        <h6 className="form__terms flex">
+        <h6 className="form__terms ">
           By clicking the button you agree to our
           <span className="form__terms form__terms--color-red">
-            <div
+            <span
               className="pl-1"
               onClick={() => {
                 navigate("/terms-and-conditions");
               }}
             >
               <strong>Terms and Services </strong>
-            </div>
+            </span>
           </span>
         </h6>
       </Card>

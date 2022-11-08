@@ -12,9 +12,14 @@
 }
 
 .author {
-  margin-top: -20px;
-  font-style: italic;
+  position: absolute;
+  bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   text-align: center;
+  font-style: italic;
 }
 @media screen and (max-width: 375px) {
   .page__background {
