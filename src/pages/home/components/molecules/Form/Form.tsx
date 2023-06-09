@@ -95,6 +95,14 @@ export default function Form() {
             labelError="Password cannot be empty"
           />
           <Autocomplete
+            blurOnSelect="touch"
+            disablePortal
+            id="combo-box-demo"
+            options={top100Films}
+            sx={{ width: 300 }}
+            renderInput={(params) => <TextField {...params} label="Movie" />}
+          />
+          <Autocomplete
             blurOnSelect
             disablePortal
             id="combo-box-demo"
