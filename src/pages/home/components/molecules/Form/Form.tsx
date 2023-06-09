@@ -95,6 +95,7 @@ export default function Form() {
             labelError="Password cannot be empty"
           />
           <Autocomplete
+            blurOnSelect
             disablePortal
             id="combo-box-demo"
             options={top100Films}
