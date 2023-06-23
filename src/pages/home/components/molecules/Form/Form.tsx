@@ -116,8 +116,9 @@ export default function Form() {
             }}
           />
         </form>
-        <a href="http://localhost:3000/dashboard">Local</a>
-        <a href="https://pnlb-t-wrnty4-ee44031fee67c551.elb.us-east-1.amazonaws.com:3001">
+        <a href="http://localhost:3000/dashboard/mabeo">Local</a>
+        <br></br>
+        <a href="https://pnlb-t-wrnty4-ee44031fee67c551.elb.us-east-1.amazonaws.com:3001/mabeo">
           facom test
         </a>
 
