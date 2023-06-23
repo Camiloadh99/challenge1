@@ -121,6 +121,8 @@ export default function Form() {
         <a href="https://pnlb-t-wrnty4-ee44031fee67c551.elb.us-east-1.amazonaws.com:3001/mabeo">
           facom test
         </a>
+        <br></br>
+        <a href="https://uat-enduser.garantiefacom.fr">facom subdomain</a>
 
         <h6 className="form__terms ">
           By clicking the button you agree to our
