@@ -28,10 +28,8 @@ export default function Form() {
   const [emailError, setEmailError] = useState<boolean>(false);
   const [passwordError, setPasswordError] = useState<boolean>(false);
 
-  const handleChange = (e: any, value: any) => {
-    console.log(e);
-    console.log(value);
-    setValue(value.year);
+  const handleChange = () => {
+    console.log("object");
   };
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -136,6 +134,7 @@ export default function Form() {
               <strong>Terms and Services </strong>
             </span>
           </span>
+          <button onClick={handleChange}>hola</button>
         </h6>
       </Card>
     </>
